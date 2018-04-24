@@ -33,6 +33,4 @@ class String
       self.split(/[?.!][?.!]*/).size
     end
   end
-#      "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-#  self.join
 end
