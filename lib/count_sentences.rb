@@ -2,8 +2,6 @@ require 'pry'
 
 class String
 
-    #@sentence_count = []
-
   def sentence?
     if self.end_with?(".")
       true
@@ -32,7 +30,7 @@ class String
     if self.size == 0
       0
     else
-      self.split("?").size + self.split(".").size + self.split("!").size - 2
+      self.split(/[?.!]|[?.!]*/).size
     end
   end
 #      "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
